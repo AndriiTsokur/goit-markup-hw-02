@@ -1,0 +1,221 @@
+/* ======= General Styles & Reset Default - START ======= */
+:root {
+	--color-primaryBrand: #4d5ae5;
+	--color-dark: #2e2f42;
+	--color-success: #31d0aa;
+	--color-text: #434455;
+	--color-subtleText: #8e8f99;
+	--color-accent: #e7e9fc;
+	--color-light: #f4f4fd;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--color-text);
+
+	background-color: #ffffff;
+}
+
+h2,
+h3 {
+	letter-spacing: 0.02em;
+	color: var(--color-dark);
+}
+
+.nounderline {
+	text-decoration: none;
+}
+
+.nobullet {
+	list-style: none;
+}
+
+.centered-text {
+	text-align: center;
+}
+/* ======== General Styles & Reset Default - END ======== */
+
+/* ================= Components - START ================= */
+.comp-logo {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 1.33;
+	letter-spacing: 0.03;
+	text-transform: uppercase;
+}
+
+.comp-logo-left {
+	color: var(--color-primaryBrand);
+}
+
+/* LOGO - Dark Theme */
+.dark {
+	color: var(--color-dark);
+}
+
+/* LOGO - Light Theme */
+.light {
+	color: var(--color-light);
+}
+
+/* .comp-section-indented {
+	...
+} */
+
+.comp-section-wide {
+	background-color: var(--color-light);
+}
+
+.comp-section-heading {
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 1.11;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+/* .comp-4cols-list {
+	...
+} */
+
+/* .comp-4cols-list-item {
+	...
+} */
+
+/* .comp-3cols-list {
+	...
+} */
+
+/* .comp-3cols-list-item {
+	...
+} */
+
+.comp-list-item-heading {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.2;
+}
+/* ================== Components - END ================== */
+
+/* ================= Top Header - START ================= */
+.top-nav-list-item {
+	font-weight: 600;
+	letter-spacing: 0.02em;
+	color: var(--color-dark);
+}
+
+.top-nav-list-item:hover,
+.top-nav-list-item:focus {
+	color: var(--color-text);
+}
+
+.top-nav-list-item:active {
+	color: var(--color-primaryBrand);
+}
+
+/* Top Navigation Item - CURRENT Page */
+.current {
+	color: var(--color-primaryBrand);
+}
+
+.top-contacts-item {
+	color: var(--color-text);
+}
+
+.top-contacts-item:hover,
+.top-contacts-item:focus {
+	color: var(--color-primaryBrand);
+}
+/* ================== Top Header - END ================== */
+
+/* ================ Section Hero - START ================ */
+.hero {
+	text-align: center;
+
+	background-color: var(--color-dark);
+}
+
+.hero-heading {
+	font-size: 56px;
+	font-weight: 600;
+	line-height: 1.07;
+	letter-spacing: 0.02em;
+	color: #ffffff;
+}
+
+.hero-btn {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.17;
+	letter-spacing: 0.04em;
+	color: #ffffff;
+
+	background-color: var(--color-primaryBrand);
+	/* box-shadow: ; */
+
+	cursor: pointer;
+}
+
+/* .hero-btn:hover,
+.hero-btn:focus {
+	box-shadow: ;
+} */
+
+.hero-btn:active {
+	background-color: #404bbf;
+}
+/* ================= Section Hero - END ================= */
+
+/* =================== Footer - START =================== */
+.basement {
+	color: var(--color-accent);
+
+	background-color: var(--color-dark);
+}
+/* ==================== Footer - END ==================== */
+
+/* ================== Portfolio - START ================= */
+/* .portfolio-filter-list {
+	...
+} */
+
+/* .portfolio-filter-list-item {
+	...
+} */
+
+.portfolio-btn {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	color: var(--color-primaryBrand);
+
+	background-color: var(--color-light);
+
+	cursor: pointer;
+}
+
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+	color: #ffffff;
+
+	background-color: var(--color-primaryBrand);
+}
+
+.portfolio-list-item-descr {
+	color: var(--color-light);
+
+	background-color: var(--color-primaryBrand);
+}
+
+/* .portfolio-list-item-link {
+	...
+} */
+/* =================== Portfolio - END ================== */
