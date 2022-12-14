@@ -11,8 +11,6 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	letter-spacing: 0.02em;
 	color: var(--color-text);
 
 	background-color: #ffffff;
@@ -20,6 +18,7 @@ body {
 
 p {
 	line-height: 1.5;
+	letter-spacing: 0.02em;
 }
 
 .nounderline {
@@ -64,12 +63,12 @@ p {
 }
 
 /* LOGO - Dark Theme */
-.dark {
+.logo-dark {
 	color: var(--color-dark);
 }
 
 /* LOGO - Light Theme */
-.light {
+.logo-light {
 	color: var(--color-light);
 }
 
@@ -95,7 +94,7 @@ p {
 	...
 } */
 
-/* .comp-4cols-list-item {
+/* .comp-4cols-item {
 	...
 } */
 
@@ -103,47 +102,70 @@ p {
 	...
 } */
 
-/* .comp-3cols-list-item {
+/* .comp-3cols-item {
 	...
 } */
 
-.comp-list-item-heading {
+.comp-list-heading {
 	font-size: 20px;
 	font-weight: 700;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--color-dark);
 }
-
-.comp-list-item-text {
-	color: var(--color-text);
-}
 /* ================== Components - END ================== */
 
-/* ================= Top Header - START ================= */
-.top-nav-list-item {
+/* =================== Header - START =================== */
+/* .header {
+	...
+} */
+
+/* .header-navigation {
+	...
+} */
+
+/* .header-list {
+	...
+} */
+
+/* .header-item {
+	...
+} */
+
+.header-link {
 	font-weight: 700;
+	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--color-dark);
 }
 
-.top-nav-list-item:hover,
-.top-nav-list-item:focus,
-.top-nav-list-item:active {
+.header-link:hover,
+.header-link:focus,
+.header-link:active {
 	color: var(--color-primaryBrand);
 }
 
-/* Top Navigation Item - CURRENT Page */
+/* HEADER NAVIGATION Item - CURRENT Page */
 .current {
 	color: var(--color-primaryBrand);
 }
 
-.top-contacts-item {
+/* .header-contacts-list {
+	...
+} */
+
+/* .header-contacts-item {
+	...
+} */
+
+.header-contacts-link {
+	line-height: 1.5;
+	letter-spacing: 0.02em;
 	color: var(--color-text);
 }
 
-.top-contacts-item:hover,
-.top-contacts-item:focus {
+.header-contacts-link:hover,
+.header-contacts-link:focus {
 	color: var(--color-primaryBrand);
 }
 /* ================== Top Header - END ================== */
@@ -167,7 +189,7 @@ p {
 	font-family: inherit;
 	font-size: inherit;
 	font-weight: 700;
-	line-height: 1.17;
+	line-height: 1.19;
 	letter-spacing: 0.04em;
 	color: #ffffff;
 
@@ -202,7 +224,7 @@ p {
 	...
 } */
 
-/* .portfolio-filter-list-item {
+/* .portfolio-filter-item {
 	...
 } */
 
@@ -226,13 +248,17 @@ p {
 	background-color: var(--color-primaryBrand);
 }
 
-.portfolio-list-item-descr {
+/* .portfolio-item-descr {
 	color: var(--color-light);
 
 	background-color: var(--color-primaryBrand);
-}
+} */
 
-/* .portfolio-list-item-link {
+/* .portfolio-item-link {
 	...
 } */
+
+.portfolio-item-text {
+	color: var(--color-text);
+}
 /* =================== Portfolio - END ================== */
