@@ -12,18 +12,14 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.5;
 	letter-spacing: 0.02em;
 	color: var(--color-text);
 
 	background-color: #ffffff;
 }
 
-h2,
-h3 {
-	letter-spacing: 0.02em;
-	color: var(--color-dark);
+p {
+	line-height: 1.5;
 }
 
 .nounderline {
@@ -37,6 +33,20 @@ h3 {
 .centered-text {
 	text-align: center;
 }
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 /* ======== General Styles & Reset Default - END ======== */
 
 /* ================= Components - START ================= */
@@ -45,7 +55,7 @@ h3 {
 	font-size: 18px;
 	font-weight: 800;
 	line-height: 1.33;
-	letter-spacing: 0.03;
+	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
 
@@ -73,8 +83,10 @@ h3 {
 
 .comp-section-heading {
 	font-size: 36px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.11;
+	letter-spacing: 0.02em;
+	color: var(--color-dark);
 	text-align: center;
 	text-transform: capitalize;
 }
@@ -97,23 +109,26 @@ h3 {
 
 .comp-list-item-heading {
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.2;
+	letter-spacing: 0.02em;
+	color: var(--color-dark);
+}
+
+.comp-list-item-text {
+	color: var(--color-text);
 }
 /* ================== Components - END ================== */
 
 /* ================= Top Header - START ================= */
 .top-nav-list-item {
-	font-weight: 600;
+	font-weight: 700;
 	letter-spacing: 0.02em;
 	color: var(--color-dark);
 }
 
 .top-nav-list-item:hover,
-.top-nav-list-item:focus {
-	color: var(--color-text);
-}
-
+.top-nav-list-item:focus,
 .top-nav-list-item:active {
 	color: var(--color-primaryBrand);
 }
@@ -142,7 +157,7 @@ h3 {
 
 .hero-heading {
 	font-size: 56px;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.07;
 	letter-spacing: 0.02em;
 	color: #ffffff;
@@ -151,7 +166,7 @@ h3 {
 .hero-btn {
 	font-family: inherit;
 	font-size: inherit;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.17;
 	letter-spacing: 0.04em;
 	color: #ffffff;
@@ -174,9 +189,11 @@ h3 {
 
 /* =================== Footer - START =================== */
 .basement {
-	color: var(--color-accent);
-
 	background-color: var(--color-dark);
+}
+
+.basement-text {
+	color: var(--color-accent);
 }
 /* ==================== Footer - END ==================== */
 
@@ -192,7 +209,7 @@ h3 {
 .portfolio-btn {
 	font-family: inherit;
 	font-size: inherit;
-	font-weight: 600;
+	font-weight: 700;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 	color: var(--color-primaryBrand);
